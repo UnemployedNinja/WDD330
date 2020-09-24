@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>WDD 330 portfolio</title>
+  </head>
+  <body>
+    <h1>W02 Team Activity</h1>
+    
+    <h2>Section 1</h2>
+    <div>
+      <form action="">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <button onclick="readName();return false;">Welcome</button>
+      </form>
+    </div>
+
+    <p id="welcome"></p>
+
+    <script>
+      function readName(){
+        let fname = document.getElementById("fname").value;
+        let lname = document.getElementById("lname").value;
+
+        document.getElementById("welcome").innerHTML = "Welcome " + fname + " " + lname + "!"; 
+      }
+    </script>
+
+<h2>Section 2</h2>
+<div>
+  <form action="">
+    <label for="Number">Enter a number: </label>
+    <input type="text" id="num" name="num"><br><br>
+    <button onclick="sumOfNumbers();return false;">Add</button>
+  </form>
+</div>
+
+<p id="sumOfNumbers"></p>
+
+<script>
+  function sumOfNumbers(){
+    let num = document.getElementById("num").value;
+    let sum = 0;
+    for(let i = 0; i <= num; i++) {
+      sum += i; 
+    }
+    if(isNaN(num)){
+      let str = "ERROR: Non Valid Number!";
+      document.getElementById("sumOfNumbers").innerHTML = str.fontcolor("red"); 
+    }
+    else{
+      document.getElementById("sumOfNumbers").innerHTML = sum; 
+    }
+
+  }
+</script>
+
+<h2>Section 3</h2>
+<div>
+  <form action="">
+    <label for="calculateFirst">Enter First number: </label>
+    <input type="text" id="num1" name="num1"><br><br>
+    <label for="calculateSeccond">Enter Seccond number: </label>
+    <input type="text" id="num2" name="num2"><br><br>
+    <button onclick="calculator();return false;">+</button>
+  </form>
+</div>
+
+<p id="calculator"></p>
+
+<script>
+  function calculator(){
+    let sum = 0;
+    let num1 = document.getElementById("num1").value
+    let num2 = document.getElementById("num2").value;
+    sum = Math.floor(num1) + Math.floor(num2);
+    
+    document.getElementById("calculator").innerHTML = sum; 
+
+  }
+</script>
+
+  </body>
+</html>
