@@ -14,8 +14,8 @@ function displayWeekLinks() {
     const links = [
         {label: "Week 1", URL: "week1/index.html"},
         {label: "Week 2", URL: "week2/index.html"},
-        {label: "Week 3", URL: "week3/index.html"}
-        {label: "Week 4", URL: "week4/index.html"}
+        {label: "Week 3", URL: "week3/index.html"},
+        {label: "Week 4", URL: "week4/index.html"},
         {label: "Week 5", URL: "week5/index.html"}
         
     ]
