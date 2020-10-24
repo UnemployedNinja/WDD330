@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>TODO List</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main>
+      <h2><b>TODO List</b></h2>
+      <hr>
+      <!-- <div>
+        
+      </div>
+
+      <ul id="myUL">
+      </ul> -->
+
+      <div id="myDIV" class="header">
+        <form>
+          <input type="text" id="todoItem" name="todoItem" placeholder="TODO Item">
+          <span onclick="addItem()" class="addBtn"><b>+</b></span>
+        </form>
+      </div>
+
+      <br><br><br>
+      
+      <ul id="myUL">
+        
+      </ul>
+
+      <div id="myDIV" class="header">
+        <span onclick="displayAllItems()" class="tabBtn"><b>All</b></span>
+        <span onclick="displayIncompleteItems()" class="tabBtn"><b>Incomplete</b></span>
+        <span onclick="displayCompletedItems()" class="tabBtn"><b>Completed</b></span>
+      </div>
+    </main>
+
+    <script src="todo.js"></script>
+
+  </body>
+</html>

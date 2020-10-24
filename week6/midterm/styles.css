@@ -1,0 +1,92 @@
+/* Applied to everything */
+main {
+    display: block;
+    width: 350px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+/* Include the padding and border in an element's total width and height */
+* {
+  box-sizing: border-box;
+}
+
+/* Remove margins and padding from the list */
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Style the list items */
+ul li {
+  position: relative;
+  padding: 12px 6px 8px 40px;
+  list-style-type: none;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+
+/* When clicked on, add a background color and strike out text */
+ul li.checked {
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: '';
+  position: absolute;
+  border-color: black;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 12px;
+  width: 6px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+/* Style the input */
+input {
+  margin: 0;
+  border: 1px solid black;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  padding: 10px;
+  width: 25%;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border: 1px solid black;
+
+}
+
+/* Syle on tab buttons */
+.tabBtn {
+    width: 33.33%;
+    float: left;
+    background-color: lightgray;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 1px solid black;
+}
