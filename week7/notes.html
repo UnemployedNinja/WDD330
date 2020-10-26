@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330 portfolio</title>
+  </head>
+  <body>
+    <h1>Week07 Notes</h1>
+
+    <div>
+        <h3>Ch11: Further Functions</h3>
+        <paragraph>
+        this.name can be any variable passed into a function <br>
+        Basic object usage <br>
+        You can call the data from the cache of a computer <br>
+        temp variables do not exist out of its scope <br>
+        Initialization only need to be done once to an object <br>
+        This function rewrites itself; <br>
+        <pre>
+          function party(){
+            console.log('Wow this is amazing!');
+            party = function(){
+            console.log('Been there, got the T-Shirt');
+            }
+          }
+        </pre>
+        A callback goes back to its original instance <br>
+        callback hell is when callbacks get way to tangled <br>
+        Promise is a futrue result. It is used with asynchronous operations <br>
+        promises have resolve() and reject() that initializes the code <br>
+        async is placed in front of a function to make it asynchronous <br> 
+        Functions can return functions. I have no idea why that would be used? <br>
+        </paragraph>
+    </div>
+
+    <div>
+        <h3>Ch13: AJAX</h3>
+        <paragraph>
+        AJAX means asynchronous JavaScript XML <br>
+        Fetch uses an api and uses .then to perform the response <br>
+        .then can use a lambda function <br>
+        Response can redirect to a different URL (response.redirect(URL) <br>
+        response.text() can be used to convert data to a string <br>
+        response.json() changes into a js object <br>
+        There are response objects <br>
+        HTTP methods are GET, POST, PUT, PATCH, DELETE <br>
+        Headers are headers for the response or request <br>
+        Liging Standard; <br>
+        <pre>
+          $.ajax('http://numbersapi.com/random')
+          .done(text => outputDiv.innerHTML = text );
+        </pre>
+        </paragraph>
+    </div>
+
+  </body>
+</html>
