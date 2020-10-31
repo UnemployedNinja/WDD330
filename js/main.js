@@ -16,7 +16,13 @@ function displayWeekLinks() {
         {label: "Week 2", URL: "week2/index.html"},
         {label: "Week 3", URL: "week3/index.html"},
         {label: "Week 4", URL: "week4/index.html"},
-        {label: "Week 5", URL: "week5/index.html"}
+        {label: "Week 5", URL: "week5/index.html"},
+        {label: "Week 6", URL: "week6/index.html"},
+        {label: "Week 7", URL: "week7/index.html"},
+        {label: "Week 8", URL: "week8/index.html"},
+        {label: "Week 9", URL: "week9/index.html"},
+        {label: "Week 10", URL: "week10/index.html"}
+
         
     ]
 
