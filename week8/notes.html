@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 330 portfolio</title>
+  </head>
+  <body>
+    <h1>Week08 Notes</h1>
+
+    <div>
+        <h3>Ch08: CSS3 Transforms and Transitions</h3>
+        <paragraph>
+        Transforms manipulate the looks of a variable <br>
+        Transforms look like; <br>
+        <pre>
+            transform: translate(45px, -45px);
+        </pre>
+        Transform can alter text on the screen <br>
+        Transforms can roate text <br>
+        Skew does x and y axis manipulation <br>
+        Order Matters! <br>
+        Transitions change over time <br>
+        Transitions look like; <br>
+        <pre>
+            transition-property: transform, color;
+        </pre>
+        There is also transition-durations: transform <br>
+        <pre>
+            transition-timing-function: ease-out;
+        </pre>
+        Transitions can be used many times in a row if needed <br>
+        Animations are used similarly to Transitions <br>
+        Animations llook like; <br>
+        <pre> 
+            animation-duration: 300ms;
+        </pre>
+
+        </paragraph>
+    </div>
+
+    <div>
+        <h3>Ch12: Canvas, SVG, and Drag and Drop</h3>
+        <paragraph>
+        Canvas is an API <br>
+        Canvas is used as a tag; <br>
+        <pre>
+            <canvas>
+                Text here!
+            </canvas>
+        </pre>
+        <pre>
+            function drawGradient() {
+                ⋮
+                var gradient = context.createLinearGradient(0, 0, 0, 200);
+                gradient.addColorStop(0, "blue");
+                gradient.addColorStop(1, "white");
+                context.fillStyle = gradient;
+                context.fillRect(10, 10, 100, 100);
+                context.strokeRect(10, 10, 100, 100);
+               }               
+        </pre>
+        <pre>
+            function drawCircle(canvas) {
+                var canvas = document.getElementById("myCanvas");
+                var context = canvas.getContext("2d");
+                context.beginPath();
+                context.arc(50, 50, 30, 0, Math.PI*2, true);
+            }
+        </pre>
+        Images drawn can become buttons or anything really <br>
+        SVG Scalable Vector Graphics <br>
+        <pre>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+                <circle cx="50" cy="50" r="25" fill="red"/>
+            </svg>
+        </pre>
+        
+
+        </paragraph>
+    </div>
+
+  </body>
+</html>
