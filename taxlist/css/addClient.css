@@ -1,0 +1,16 @@
+form {
+    position: absolute;
+    bottom: 45%;
+    right: 40%;
+    width: 300px;
+    
+    border-radius: 25px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+.add {
+    color: white;
+    background-color: green;
+}

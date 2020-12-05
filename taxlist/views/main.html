@@ -3,7 +3,11 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/nav.css">
       <link rel="stylesheet" href="../css/main.css">
+      <script src="../js/clients.js"></script>
+      <script src="../js/addClient.js"></script>
+
     <title>Tax List</title>
   </head>
   <main>
@@ -11,23 +15,27 @@
         <h1>Tax Main Page</h1>
         <div class="topnav">
             <a class="active" href="#home">Home</a>
-            <a href="#about">Add Client</a>
-            <a href="#contact">Contact</a>
-            <div class="search-container">
-              <form>
-                <input type="text" placeholder="Search.." name="search">
-                <button type="submit"><i class="fa fa-search"></i></button>
-              </form>
-            </div>
-          </div>
+            <a href="addClient.html">Add Client</a>
+            <a >Contact</a>
+        </div>
 
-          <ul>
+        <!-- <ul>
             <li><a class="active" href="#home">Home</a></li>
             <li><a href="#news">News</a></li>
             <li><a href="#contact">Contact</a></li>
             <li><a href="#about">About</a></li>
-          </ul>
+        </ul> -->
+        <div onload="displayClientList()"></div>
           
+        <div class="content">
+            <p>
+                <h2>Welcome to Tax Client</h2>
+                <p>Thank you for chosing to use Tax Client. This tool is intended to make easier use<br>
+                of keeping track of what tax documents are needed during tax season for each client.<br><br>
+                Click the names of the left to display more information about Clients. <br><br>
+                Click the top buttons for company tools. </p>
+            </p>
+        </div>
     </body>
   </main>   
 </html>

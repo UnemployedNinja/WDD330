@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="../css/nav.css">
+      <link rel="stylesheet" href="../css/addClient.css">
+      <script src="../js/addClient.js"></script>
+    <title>Tax List</title>
+  </head>
+  <main>
+    <body>
+        <h1>Tax Main Page</h1>
+        <div class="topnav">
+            <a href="main.html">Home</a>
+            <a class="active" href="#addClient">Add Client</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+          
+            <div>
+                <form id="addClientForm">
+                    First Name: <input type='text' id='firstName' name='firstName' placeholder='First Name'><br><br>
+                    Last Name: <input type='text' id='lastName' name='lastName' placeholder='Last Name'><br><br>
+                    Email Address: <input type='text' id='email' name='email' placeholder='Email'><br><br>
+                    Phone Number: <input type='text' id='phone' name='phone' placeholder='(111) 111-1111'><br><br>
+                    <button type='button' class="add" value='login' onclick='addClient()'>Add</button>
+                    <button type='reset' value='Reset'>Clear</button>
+                </form>
+            </div>
+            <div>
+                <p id="formStatus"></p>
+            </div>
+    </body>
+  </main>   
+</html>
