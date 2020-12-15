@@ -44,14 +44,27 @@ function store() {
 
 function addClient() {
 
-    let clientList = store(); 
-    let client = new Object(); 
-    client.firstName = document.getElementById("firstName");
-    client.lastName = document.getElementById("lastName");
-    client.email = document.getElementById("email");
-    client.phoneNumber = document.getElementById("phone");
+    var client = 
+    {
+        firstName: document.getElementById("firstName").value,
+        lastName: document.getElementById("lastName").value,
+        email: document.getElementById("email").value,
+        phoneNumber: document.getElementById("phone").value,
+        taxDocuments: new Object()
+    };
+
+    var filename = "readme.txt";
+    var text = client;
+    var blob = new Blob([client], {type:'text/plain'});
+    var link = document.createElement("a");
+    link.download = filename;
+    // Text of download file
+    link.innerHTML = client.firstName;
+    link.href = window.URL.createObjectURL(blob);
+    document.body.appendChild(link);
     
-    clientList.push(client);
-    localStorage.setItem('clientList', JSON.stringify(clientList));
+    alert("User Added!");
+    // let data = new Blob([client], {type: "text/plain"});
+    // fileWriter.write(data);
    
 }

@@ -13,6 +13,7 @@ div {
     bottom: 50%;
     right: 50%;
     width: 300px;
+    border: black;
     border-radius: 25px;
     padding: 10px;
     margin: 10px;

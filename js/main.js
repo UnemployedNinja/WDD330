@@ -21,7 +21,8 @@ function displayWeekLinks() {
         {label: "Week 7", URL: "week7/index.html"},
         {label: "Week 8", URL: "week8/index.html"},
         {label: "Week 9", URL: "week9/index.html"},
-        {label: "Week 10", URL: "week10/index.html"}
+        {label: "Week 10", URL: "week10/index.html"},
+        {label: "Block 2 Project", URL: "taxlist/login.html"}
 
         
     ]
